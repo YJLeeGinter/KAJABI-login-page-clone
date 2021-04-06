@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+}
+
+body{
+    background-color: #f7f8f9;
+    display: flex;
+    height: 100vh; /* 높이랑 너비가 설정되어 있어야 밑에 있는 FLEX의 속성을 사용할 수 있다. */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(90, 90, 90);
+
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: white;
+    width: 375px;
+    height: 667px;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 3em;
+}
+
+h3{
+    color: black;
+    margin-bottom: 1em;
+}
+
+p, label{
+    font-size: 0.9rem;
+}
+
+form{
+    margin: 1em 0;
+}
+
+form > * {
+    margin-bottom: 1.5em;
+}
+
+.email, .password, .btn-sign{
+    width: 100%;
+}
+
+input[type="email"], input[type = "password"]{
+    padding: 0.9em;
+    border:0.5px solid  rgb(150, 150, 150);
+    color: rgb(150, 150, 150);
+    border-radius: 5px;
+}
+
+label{
+    margin-left: 5px;
+}
+
+.btn-sign{
+    color: white;
+    border: none;
+    padding: 1em 0;
+    background-color: #2e91fc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+
+a{
+    text-decoration: none;
+    color: #00a7ff;
+}
+
+@media (min-width: 770px) {
+
+    .container{
+        height: 525px;
+        box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.37);
+
+    }
+
+}
+
+.img-container{
+    display: none;
+}
+
+@media (min-width: 990px) {
+
+    .container{
+        box-shadow: none;
+    }
+
+    .main-container{
+        display: flex;
+        box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.37);
+
+    }
+
+    .img-container{
+        display: block;
+        width: 375px;
+        height: 525px ;
+        background-image:  linear-gradient( rgba(17,17,17,0) 33%, rgba(0,0,0,1) 100%), url(person.jpg);
+        background-size: cover;
+        background-position-x: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        box-sizing: border-box;
+        padding: 1.8em;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        }
+
+    .logo-london{
+        width: 150px;
+        margin-bottom: 1.5em;
+    }
+
+}
